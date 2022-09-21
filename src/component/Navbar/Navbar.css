@@ -1,0 +1,36 @@
+header.active .navbar {
+     transform: translateX(0);
+     transition: .6s cubic-bezier(.17, .67, .55, .92);
+}
+
+header.active .menu {
+     opacity: 0;
+}
+
+header.active .close {
+     opacity: 1;
+}
+
+.nav {
+     display: inline-block;
+     position: relative;
+     color: #000;
+}
+
+.nav:after {
+     content: '';
+     position: absolute;
+     width: 100%;
+     transform: scaleX(0);
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: #CC9933;
+     transform-origin: bottom right;
+     transition: transform 0.28s ease-out;
+}
+
+.nav:hover:after {
+     transform: scaleX(1);
+     transform-origin: bottom left;
+}
