@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        // 'hero-pattern': "url('../icam-distribution/src/images/backgroundHero.jpg')"
+      },
       fontFamily: {
         'optiTimes': ['OPTITimes-Roman'],
         'suiseeIntl': ['SuisseIntl-Regular'],

@@ -3,7 +3,7 @@ import Hero from '../Hero/Hero.js';
 
 const Home = () => {
      return (
-          <div className="bg-[#CACABA] h-screen">
+          <div>
                <Hero />
           </div>
      );
