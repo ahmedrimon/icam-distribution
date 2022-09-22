@@ -1,6 +1,6 @@
 header.active .navbar {
      transform: translateX(0);
-     transition: .6s cubic-bezier(.17, .67, .55, .92);
+     transition: .6s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 header.active .menu {

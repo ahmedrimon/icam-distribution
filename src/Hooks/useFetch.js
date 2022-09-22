@@ -10,7 +10,7 @@ const useFetch = () => {
                .then(data => setProducts(data))
      }, [])
 
-     return [products]
+     return [products, setProducts]
 };
 
 export default useFetch;
