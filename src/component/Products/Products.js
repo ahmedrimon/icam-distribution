@@ -29,7 +29,7 @@ const Products = (props) => {
                     </div>
                </div>
                <div className="p-8 flex justify-center">
-                    <Link to="#" className="font-inter checkout-property text-[#F74C25] mt-4 p-6">Checkout</Link>
+                    <Link to="/checkout" className="font-inter checkout-property text-[#F74C25] mt-4 p-6">Checkout</Link>
                </div>
           </div>
      );
