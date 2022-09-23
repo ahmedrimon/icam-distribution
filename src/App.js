@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './component/Home/Home';
 
 const App = () => {
+
   return (
     <div>
       <Navbar />
@@ -13,7 +14,6 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
       </Routes>
-
     </div>
   );
 };

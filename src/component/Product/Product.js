@@ -8,10 +8,11 @@ const Product = () => {
 
      return (
           <div>
-               <h2>Products: {products.length}</h2>
-               {
-                    products.map(prod => <Products id={prod.id} prod={prod} />)
-               }
+               <div className="lg:grid lg:grid-cols-3 lg:gap-2 lg:p-6">
+                    {
+                         products.map(prod => <Products key={prod.id} prod={prod} />)
+                    }
+               </div>
           </div>
      );
 };
