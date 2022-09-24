@@ -1,0 +1,15 @@
+.button-property {
+     border: 1px solid #F74C25;
+     padding: 10px;
+     border-radius: 25px;
+     width: 40%;
+     display: flex;
+     justify-content: center;
+     
+}
+
+.button-property:hover {
+     color: #fff;
+     background-color: #F74C25;
+     transition: .6s cubic-bezier(0.22, 1, 0.36, 1);
+}
