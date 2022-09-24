@@ -1,0 +1,23 @@
+.list-hover {
+     /* display: inline-block; */
+     position: relative;
+     /* color: #000; */
+}
+
+.list-hover:after {
+     content: '';
+     position: absolute;
+     width: 95%;
+     transform: scaleX(0);
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: #F74C25;
+     transform-origin: bottom right;
+     transition: transform 0.25s ease-out;
+}
+
+.list-hover:hover:after {
+     transform: scaleX(1);
+     transform-origin: bottom left;
+}

@@ -25,7 +25,7 @@ header.active .close {
      height: 2px;
      bottom: 0;
      left: 0;
-     background-color: #CC9933;
+     background-color: #F74C25;
      transform-origin: bottom right;
      transition: transform 0.28s ease-out;
 }
