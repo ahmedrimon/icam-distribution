@@ -8,6 +8,7 @@ import Checkout from './component/Checkout/Checkout';
 import Footer from './component/Footer/Footer';
 import Blogs from './component/Blogs/Blogs';
 import Login from './component/Login/Login';
+import Register from './component/Register/Register.js';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />

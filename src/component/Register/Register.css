@@ -1,9 +1,9 @@
-.n-bg {
-     background-image: url('../../images/n.png');
+.b-bg {
+     background-image: url('../../images/b.png');
      background-size: cover;
      background-position: center;
      width: 100%;
-     height: 105vh;
+     height: 130vh;
 }
 
 input[type=text] {
@@ -41,14 +41,13 @@ input:focus {
      transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.login-property{
+.register-property{
      border: 1px solid #ECEBED;
      padding: 10px;
      border-radius: 25px;
-     width: 90%;
 }
 
-.login-property:hover {
+.register-property:hover {
      border: none;
      color: #fff;
      background-color: #F74C25;
@@ -68,4 +67,13 @@ input:focus {
      background-color: #008324;
      transition: .6s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
+@media (min-width: 640px) {
+     .b-bg{
+          height: 110vh;
+     }
+}
+
+
+
 
