@@ -27,11 +27,10 @@ const Navbar = () => {
                <div className="navbar font-bigilla absolute flex items-center justify-center top-0 right-0 w-[15%] h-screen bg-[#ECEBED] duration-[.6s] ease-[cubic-bezier(.17,.67,.55,.92)] translate-x-[100%] 1xs:w-[40%] xs:w-[25%] sm:w-[40%] 3xl:w-[30%]">
                     <ul className="list-none">
                          <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="/home">HOME</Link></li>
-                         <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="#">SERVICES</Link></li>
                          <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="#">CHECKOUT</Link></li>
-                         <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="#">BLOGS</Link></li>
+                         <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="/blogs">BLOGS</Link></li>
                          <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="#">ABOUT</Link></li>
-                         <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="#">LOGIN</Link></li>
+                         <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="/login">LOGIN</Link></li>
                          <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="#">REGISTER</Link></li>
                     </ul>
                </div>

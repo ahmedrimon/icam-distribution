@@ -1,0 +1,56 @@
+.n-bg {
+     background-image: url('../../images/n.png');
+     background-size: cover;
+     background-position: center;
+     width: 100%;
+     height: 100vh;
+}
+
+input[type=text] {
+     background-color: transparent;
+     padding: 1em;
+     width: 80%;
+     font-size: 20px;
+}
+
+input[type=text]::placeholder {
+     color: #ECEBED;
+     font-size: 20px;
+}
+
+/* Password styling */
+
+input[type=password] {
+     background-color: transparent;
+     padding: 1em;
+     width: 80%;
+     font-size: 20px;
+}
+
+input[type=password]::placeholder {
+     color: #ECEBED;
+     font-size: 20px;
+}
+
+input:focus {
+     outline: none;
+     border: none;
+     border-width: thin;
+     border-bottom-style: solid;
+     border-bottom-color: #ECEBED;
+     transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.login-property{
+     border: 1px solid #ECEBED;
+     padding: 10px;
+     border-radius: 25px;
+     width: 90%;
+}
+
+.login-property:hover {
+     border: none;
+     color: #fff;
+     background-color: #F74C25;
+     transition: .6s cubic-bezier(0.22, 1, 0.36, 1);
+}
