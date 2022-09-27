@@ -6,14 +6,14 @@
      height: 105vh;
 }
 
-input[type=text] {
+input[type=email] {
      background-color: transparent;
      padding: 1em;
      width: 80%;
      font-size: 20px;
 }
 
-input[type=text]::placeholder {
+input[type=email]::placeholder {
      color: #ECEBED;
      font-size: 20px;
 }
@@ -67,5 +67,15 @@ input:focus {
      color: #fff;
      background-color: #008324;
      transition: .6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (min-width: 1700px) {
+     .n-bg {
+          background-image: url('../../images/n.png');
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: 80vh;
+     }
 }
 

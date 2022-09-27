@@ -18,6 +18,18 @@ input[type=text]::placeholder {
      font-size: 20px;
 }
 
+input[type=email] {
+     background-color: transparent;
+     padding: 1em;
+     width: 80%;
+     font-size: 20px;
+}
+
+input[type=email]::placeholder {
+     color: #ECEBED;
+     font-size: 20px;
+}
+
 /* Password styling */
 
 input[type=password] {
@@ -45,6 +57,7 @@ input:focus {
      border: 1px solid #ECEBED;
      padding: 10px;
      border-radius: 25px;
+     width: 90%;
 }
 
 .register-property:hover {
@@ -68,9 +81,121 @@ input:focus {
      transition: .6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+
 @media (min-width: 640px) {
      .b-bg{
           height: 110vh;
+     }
+}
+
+@media (min-width: 768px) {
+     input[type=text] {
+          background-color: transparent;
+          padding: 1em;
+          width: 70%;
+          font-size: 20px;
+     }
+
+     input[type=email] {
+          background-color: transparent;
+          padding: 1em;
+          width: 70%;
+          font-size: 20px;
+     }
+
+     input[type=password] {
+          background-color: transparent;
+          padding: 1em;
+          width: 70%;
+          font-size: 20px;
+     }
+     .register-property{
+          border: 1px solid #ECEBED;
+          padding: 10px;
+          border-radius: 25px;
+          width: 70%;
+     }
+     .google-property{
+          border: 1px solid #ECEBED;
+          padding: 10px;
+          border-radius: 25px;
+          width: 70%;
+     }
+}
+
+@media (min-width: 1280px){
+     input[type=text] {
+          background-color: transparent;
+          padding: 1em;
+          width: 50%;
+          font-size: 20px;
+     }
+     input[type=email] {
+          background-color: transparent;
+          padding: 1em;
+          width: 50%;
+          font-size: 20px;
+     }
+     input[type=password] {
+          background-color: transparent;
+          padding: 1em;
+          width: 50%;
+          font-size: 20px;
+     }
+     .register-property{
+          border: 1px solid #ECEBED;
+          padding: 10px;
+          border-radius: 25px;
+          width: 50%;
+     }
+     .google-property{
+          border: 1px solid #ECEBED;
+          padding: 10px;
+          border-radius: 25px;
+          width: 50%;
+     }
+}
+@media (min-width: 1700px){
+
+     .b-bg {
+          background-image: url('../../images/b.png');
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: 90vh;
+     }
+     
+     input[type=text] {
+          background-color: transparent;
+          padding: 1em;
+          width: 40%;
+          font-size: 20px;
+     }
+     input[type=email] {
+          background-color: transparent;
+          padding: 1em;
+          margin-top: 1em;
+          width: 40%;
+          font-size: 20px;
+     }
+     input[type=password] {
+          background-color: transparent;
+          padding: 1em;
+          margin-top: 1em;
+          width: 40%;
+          font-size: 20px;
+     }
+     .register-property{
+          border: 1px solid #ECEBED;
+          padding: 10px;
+          border-radius: 25px;
+          width: 40%;
+     }
+     .google-property{
+          border: 1px solid #ECEBED;
+          padding: 10px;
+          border-radius: 25px;
+          width: 40%;
      }
 }
 

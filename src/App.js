@@ -9,6 +9,7 @@ import Footer from './component/Footer/Footer';
 import Blogs from './component/Blogs/Blogs';
 import Login from './component/Login/Login';
 import Register from './component/Register/Register.js';
+import ErrorPage from './component/ErrorPage/ErrorPage.js';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </div>

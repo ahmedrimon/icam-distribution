@@ -2,3 +2,8 @@ body {
      overflow-x: hidden;
      scroll-behavior: smooth;
 }
+
+::selection {
+     color: #000;
+     background: #9BF0F0;
+}
