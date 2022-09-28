@@ -18,9 +18,10 @@ const Register = () => {
 
      const handleGoogleSignIn = () => {
           signInWithGoogle()
-          if (user) {
-               navigate('/')
-          }
+     }
+
+     if (user) {
+          navigate('/home')
      }
 
      if (error) {
