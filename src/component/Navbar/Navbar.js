@@ -5,12 +5,21 @@ import { Link } from 'react-router-dom';
 
 import menu from '../../images/menu.png';
 import close from '../../images/close.png';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init.js';
+import { signOut } from 'firebase/auth';
 
 const Navbar = () => {
 
      const handleToggle = () => {
           var header = document.querySelector("header")
           header.classList.toggle("active")
+     }
+
+     const [user] = useAuthState(auth)
+
+     const logout = () => {
+          signOut(auth)
      }
 
      return (
@@ -29,7 +38,8 @@ const Navbar = () => {
                          <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="/home">HOME</Link></li>
                          <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="/checkout">CHECKOUT</Link></li>
                          <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="/blogs">BLOGS</Link></li>
-                         <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="/login">LOGIN</Link></li>
+                         {user ? <button onClick={logout} className="font-inter bg-orange-500 p-2 rounded-lg">Sign Out</button>
+                              : <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="/login">LOGIN</Link></li>}
                          <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="/register">REGISTER</Link></li>
                     </ul>
                </div>
