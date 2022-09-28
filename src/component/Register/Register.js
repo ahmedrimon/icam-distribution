@@ -1,12 +1,40 @@
 import React from 'react';
+
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init.js';
 import './Register.css';
 
 const Register = () => {
+
+     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+
+     const navigate = useNavigate()
 
      const handleSubmit = (e) => {
           e.preventDefault();
           console.log('clicked submit form');
      }
+
+     const handleGoogleSignIn = () => {
+          signInWithGoogle()
+          if (user) {
+               navigate('/')
+          }
+     }
+
+     if (error) {
+          return (
+               <div>
+                    <p>Error: {error.message}</p>
+               </div>
+          );
+     }
+
+     if (loading) {
+          return <p>Loading...</p>;
+     }
+
 
 
      return (
@@ -29,7 +57,7 @@ const Register = () => {
                               <h2 className="font-inter">OR</h2>
                          </div>
                          <div className="p-6 flex justify-center md:ml-10 lg:ml-20 xl:ml-30">
-                              <button className="google-property p-6 w-[70%]">CONTINUE WITH GOOGLE</button>
+                              <button onClick={handleGoogleSignIn} className="google-property p-6 w-[70%]">CONTINUE WITH GOOGLE</button>
                          </div>
                     </div>
                </div>
