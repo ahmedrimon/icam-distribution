@@ -12,19 +12,21 @@ import Register from './component/Register/Register.js';
 import ErrorPage from './component/ErrorPage/ErrorPage.js';
 import RequireAuth from './component/RequireAuth/RequireAuth.js';
 
-import { Pinwheel } from '@uiball/loaders'
+// import { Pinwheel } from '@uiball/loaders'
+import Loader from './component/Loader/Loader.js'
 
 const App = () => {
 
   const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 3000)
-  }, [])
+  // useEffect(() => {
+  //   setTimeout(() => setLoading(false), 3000)
+  // }, [])
 
   return (
     <>
-      {loading === false ? <div>
+    {loading && <Loader onFinish={() => setLoading(false)} />}
+      {!loading && <div>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -42,15 +44,6 @@ const App = () => {
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />
-      </div> : <div className="flex justify-center item-center bg-[#f74c25] h-screen">
-        <div className="mt-[25%]">
-          <Pinwheel
-            size={55}
-            lineWeight={3.5}
-            speed={1}
-            color="black"
-          />
-        </div>
       </div>}
     </>
   );
