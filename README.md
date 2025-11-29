@@ -6,7 +6,7 @@
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/RgHmsKL/icam-distribution.png)
+![App Screenshot](https://i.ibb.co.com/21QWmFqz/Screenshot-2025-11-29-141705.png)
 
 
 ## Features
@@ -31,7 +31,7 @@
 https://github.com/ahmedrimon/icam-distribution
 ## Live Website Link
 
-https://icam-distribution.netlify.app/
+https://icam-distribution.vercel.app/
 
 
 ## Tech Stack
