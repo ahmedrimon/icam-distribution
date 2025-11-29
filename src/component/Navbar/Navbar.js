@@ -27,20 +27,20 @@ const Navbar = () => {
                <img onClick={handleToggle} className="w-[4%] 
                menu absolute top-[5%] right-[3%] translate-x-[-50%] 
                translate-y-[-50%] z-[5] font-inter font-medium text-[1.56em]
-               uppercase underline cursor-pointer 1xs:w-[6%] 3xl:w-[3%] hover:bg-[#fff] hover:rounded-[50%] hover:" src={menu} alt="menu" srcSet="" />
+               uppercase underline cursor-pointer hover:bg-[#fff] hover:rounded-[50%] hover:" src={menu} alt="menu" srcSet="" />
 
                <img onClick={handleToggle} className="w-[2%] close absolute top-[5%] right-[3%] translate-x-[-50%]
                 translate-y-[-50%] z-[3] font-inter font-medium text-[1.56em]
-                opacity-0 uppercase underline cursor-pointer 1xs:w-[4%] 3xl:w-[1.5%]" src={close} alt="close" srcSet="" />
+                opacity-0 uppercase underline cursor-pointer" src={close} alt="close" srcSet="" />
 
-               <div className="navbar font-bigilla absolute flex items-center justify-center top-0 right-0 w-[15%] h-screen bg-[#ECEBED] duration-[.6s] ease-[cubic-bezier(.17,.67,.55,.92)] translate-x-[100%] 1xs:w-[40%] xs:w-[25%] sm:w-[40%] 3xl:w-[30%]">
+               <div className="navbar font-bigilla absolute flex items-center justify-center top-0 right-0 w-[15%] h-screen bg-[#ECEBED] duration-[.6s] ease-[cubic-bezier(.17,.67,.55,.92)] translate-x-[100%]">
                     <ul className="list-none">
-                         <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="/home">HOME</Link></li>
-                         <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="/checkout">CHECKOUT</Link></li>
-                         <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="/blogs">BLOGS</Link></li>
+                         <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[13px]" to="/home">HOME</Link></li>
+                         <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[13px]" to="/checkout">CHECKOUT</Link></li>
+                         <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[13px]" to="/blogs">BLOGS</Link></li>
                          {user ? <button onClick={logout} className="font-inter bg-orange-500 p-2 rounded-lg">Sign Out</button>
-                              : <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="/login">LOGIN</Link></li>}
-                         <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[20px]" to="/register">REGISTER</Link></li>
+                              : <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] font-semibold text-[13px]" to="/login">LOGIN</Link></li>}
+                         <li className="mt-[13px] mb-[13px]"><Link className="nav no-underline text-[#000] text-[13px]" to="/register">REGISTER</Link></li>
                     </ul>
                </div>
           </header>
@@ -48,3 +48,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+ 
